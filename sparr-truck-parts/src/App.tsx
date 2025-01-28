@@ -1,19 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from "axios";
 import { Button } from '@mui/material';
-import { Navbar } from './components/Navbar.tsx';
+import { TruckInventory } from './components/TruckInventory.tsx';
+
+
+
+
 
 const App: React.FC = () => {
+  
   return (
     <div style={{ textAlign: 'center'}}>
+      <h1>Truck inventory</h1>
 
-      {/*This would go in the pages 
-      but since we dont have any yet, we can preview it here*/}
-      {/*  <Navbar/>  */}
+      <TruckInventory />
 
       <h1>Sparr Truck Parts</h1>
       <p>Welcome to the Sparr Truck Parts site.</p>
       <Button variant="contained" color="primary">
-        Click Me
+          Click Me
       </Button>
     </div>
   );
