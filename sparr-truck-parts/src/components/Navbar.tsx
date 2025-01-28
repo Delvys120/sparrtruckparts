@@ -14,7 +14,7 @@ import { AppBar,
          Link,
          styled} from "@mui/material";
 
-const Text = styled(Typography)({
+export const Text = styled(Typography)({
     fontWeight: "bold",
     color: "white"
 })
